@@ -11,7 +11,6 @@ const nextConfig = {
     domains: ['localhost'],
   },
   output: 'standalone',
-  },
 }
 
 export default nextConfig
