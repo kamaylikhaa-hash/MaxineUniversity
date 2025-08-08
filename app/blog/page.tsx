@@ -18,7 +18,7 @@ const featuredPost = {
   date: "March 15, 2024",
   readTime: "8 min read",
   category: "Innovation",
-  image: "/placeholder.svg?height=400&width=800&text=Digital+Transformation",
+  image: "/CTA2.png",
   featured: true,
 }
 
@@ -378,7 +378,7 @@ export default function BlogPage() {
             >
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/placeholder.svg?height=300&width=500&text=Newsletter+Signup"
+                  src="/CTA3.png"
                   alt="Newsletter"
                   width={500}
                   height={300}
