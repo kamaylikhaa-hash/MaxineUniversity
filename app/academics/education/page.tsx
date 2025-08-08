@@ -149,10 +149,11 @@ export default function EducationPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Education+College"
-                alt="Education College"
+                src="/educ.png"
+                alt="College of Education"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

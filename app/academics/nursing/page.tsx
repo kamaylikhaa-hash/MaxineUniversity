@@ -130,10 +130,11 @@ export default function NursingPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Nursing+College"
-                alt="Nursing College"
+                src="/nursing.png"
+                alt="College of Nursing"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

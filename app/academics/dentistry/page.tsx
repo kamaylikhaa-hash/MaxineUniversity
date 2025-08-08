@@ -114,10 +114,11 @@ export default function DentistryPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Dental+College"
-                alt="Dental College"
+                src="/dentisry.png"
+                alt="College of Dentistry"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

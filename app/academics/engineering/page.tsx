@@ -200,10 +200,11 @@ export default function EngineeringPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Engineering+College"
-                alt="Engineering College"
+                src="/engineering.png"
+                alt="College of Engineering & Technology"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

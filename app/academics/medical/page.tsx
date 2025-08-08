@@ -88,10 +88,11 @@ export default function MedicalPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Medical+College"
-                alt="Medical College"
+                src="/medsci.png"
+                alt="College of Medical Sciences"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

@@ -165,10 +165,11 @@ export default function HospitalityPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Hospitality+College"
-                alt="Hospitality College"
+                src="/hospitality.png"
+                alt="College of Hospitality & Nutrition"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

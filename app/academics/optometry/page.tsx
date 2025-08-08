@@ -133,10 +133,11 @@ export default function OptometryPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Optometry+College"
-                alt="Optometry College"
+                src="/optometry.png"
+                alt="College of Optometry"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

@@ -137,10 +137,11 @@ export default function PharmacyPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Pharmacy+College"
-                alt="Pharmacy College"
+                src="/pharmacy.png"
+                alt="College of Pharmacy"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>

@@ -169,10 +169,11 @@ export default function BusinessPage() {
             </div>
             <div className="relative h-96">
               <Image
-                src="/placeholder.svg?height=400&width=600&text=Business+College"
-                alt="Business College"
+                src="/cba.png"
+                alt="College of Business & Accountancy"
                 fill
                 className="object-cover rounded-lg"
+                priority
               />
             </div>
           </div>
