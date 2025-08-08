@@ -180,7 +180,7 @@ export default function ResearchPage() {
             >
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=Research+Excellence"
+                  src="/researchexe.png"
                   alt="Research Excellence"
                   width={600}
                   height={400}
@@ -470,7 +470,7 @@ export default function ResearchPage() {
             >
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/placeholder.svg?height=300&width=500&text=Research+Community"
+                  src="/researchcta.png"
                   alt="Research Community"
                   width={500}
                   height={300}
