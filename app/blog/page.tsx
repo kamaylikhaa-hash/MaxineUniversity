@@ -33,7 +33,7 @@ const blogPosts = [
     date: "March 12, 2024",
     readTime: "6 min read",
     category: "Research",
-    image: "/placeholder.svg?height=300&width=500&text=Medical+Research",
+    image: "/blog1.png",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const blogPosts = [
     date: "March 10, 2024",
     readTime: "5 min read",
     category: "Student Success",
-    image: "/placeholder.svg?height=300&width=500&text=Student+Startup",
+    image: "/students.png",
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ const blogPosts = [
     date: "March 8, 2024",
     readTime: "7 min read",
     category: "Sustainability",
-    image: "/placeholder.svg?height=300&width=500&text=Sustainability",
+    image: "/blog2.png",
   },
   {
     id: 5,
@@ -69,7 +69,7 @@ const blogPosts = [
     date: "March 5, 2024",
     readTime: "4 min read",
     category: "Global",
-    image: "/placeholder.svg?height=300&width=500&text=International+Programs",
+    image: "/partnership.png",
   },
   {
     id: 6,
@@ -193,7 +193,7 @@ export default function BlogPage() {
             >
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=University+Blog"
+                  src="/univblog.png"
                   alt="University Blog"
                   width={600}
                   height={400}
