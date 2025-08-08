@@ -48,7 +48,7 @@ const upcomingEvents = [
     location: "Main Quad",
     category: "Campus Event",
     description: "Annual celebration with food, music, and student activities",
-    image: "/placeholder.svg?height=200&width=300&text=Fall+Festival",
+    image: "/fallfestival.png",
   },
   {
     title: "Homecoming Weekend",
@@ -57,7 +57,7 @@ const upcomingEvents = [
     location: "Various Locations",
     category: "Alumni Event",
     description: "Welcome back alumni with games, reunions, and celebrations",
-    image: "/placeholder.svg?height=200&width=300&text=Homecoming",
+    image: "/homecoming.png",
   },
   {
     title: "Research Symposium",
@@ -66,7 +66,7 @@ const upcomingEvents = [
     location: "Science Building",
     category: "Academic",
     description: "Student and faculty research presentations",
-    image: "/placeholder.svg?height=200&width=300&text=Research+Symposium",
+    image: "/research.png",
   },
   {
     title: "International Food Fair",
@@ -75,7 +75,7 @@ const upcomingEvents = [
     location: "Student Union",
     category: "Cultural",
     description: "Taste cuisines from around the world",
-    image: "/placeholder.svg?height=200&width=300&text=Food+Fair",
+    image: "/foodfair].png",
   },
   {
     title: "Winter Concert Series",
@@ -84,7 +84,7 @@ const upcomingEvents = [
     location: "Performing Arts Center",
     category: "Arts",
     description: "Three nights of musical performances by student groups",
-    image: "/placeholder.svg?height=200&width=300&text=Winter+Concert",
+    image: "/winter.png",
   },
   {
     title: "Career Fair",
@@ -93,7 +93,7 @@ const upcomingEvents = [
     location: "Recreation Center",
     category: "Career",
     description: "Meet with employers and explore job opportunities",
-    image: "/placeholder.svg?height=200&width=300&text=Career+Fair",
+    image: "/careerfair.png",
   },
 ]
 
