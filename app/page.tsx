@@ -13,7 +13,7 @@ const announcements = [
     id: 1,
     title: "Fall 2024 Registration Now Open",
     description: "Register for fall semester classes. Early registration ends July 15th.",
-    image: "/placeholder.svg?height=400&width=800&text=Fall+Registration",
+    image: "/registration.jpg",
     cta: "Register Now",
     ctaLink: "/apply",
   },
@@ -21,7 +21,7 @@ const announcements = [
     id: 2,
     title: "New Medical Sciences Building Opens",
     description: "State-of-the-art facilities for our medical and nursing programs.",
-    image: "/placeholder.svg?height=400&width=800&text=Medical+Building",
+    image: "/medical-building.jpg",
     cta: "Take a Tour",
     ctaLink: "/virtual-tour",
   },
@@ -29,7 +29,7 @@ const announcements = [
     id: 3,
     title: "Research Excellence Awards 2024",
     description: "Celebrating our faculty's groundbreaking research achievements.",
-    image: "/placeholder.svg?height=400&width=800&text=Research+Awards",
+    image: "/research-awards.jpg",
     cta: "Learn More",
     ctaLink: "/blog",
   },
@@ -42,7 +42,7 @@ const newsUpdates = [
     excerpt: "Our commitment to academic excellence has been recognized nationally...",
     date: "March 15, 2024",
     category: "Achievement",
-    image: "/placeholder.svg?height=200&width=300&text=University+Ranking",
+    image: "/number1.png",
     link: "/blog",
   },
   {
@@ -51,7 +51,7 @@ const newsUpdates = [
     excerpt: "Engineering students gain access to cutting-edge internship programs...",
     date: "March 12, 2024",
     category: "Partnership",
-    image: "/placeholder.svg?height=200&width=300&text=Tech+Partnership",
+    image: "/tech-partnership.jpg",
     link: "/blog",
   },
   {
@@ -60,7 +60,7 @@ const newsUpdates = [
     excerpt: "Undergraduate biology student's research makes international impact...",
     date: "March 10, 2024",
     category: "Research",
-    image: "/placeholder.svg?height=200&width=300&text=Research+Publication",
+    image: "/journal.png",
     link: "/blog",
   },
   {
@@ -69,7 +69,7 @@ const newsUpdates = [
     excerpt: "New green energy program reduces campus carbon footprint by 40%...",
     date: "March 8, 2024",
     category: "Sustainability",
-    image: "/placeholder.svg?height=200&width=300&text=Sustainability",
+    image: "/sustain.png",
     link: "/blog",
   },
 ]
@@ -80,7 +80,7 @@ const campuses = [
     location: "Academic City",
     students: "15,000+",
     programs: "50+",
-    image: "/placeholder.svg?height=250&width=400&text=Main+Campus",
+    image: "/manila campus.png",
     link: "/virtual-tour",
   },
   {
@@ -88,7 +88,7 @@ const campuses = [
     location: "Health District",
     students: "3,000+",
     programs: "12+",
-    image: "/placeholder.svg?height=250&width=400&text=Medical+Campus",
+    image: "/healthdistrictcampus.png",
     link: "/virtual-tour",
   },
   {
@@ -96,7 +96,7 @@ const campuses = [
     location: "Innovation Park",
     students: "5,000+",
     programs: "20+",
-    image: "/placeholder.svg?height=250&width=400&text=Tech+Campus",
+    image: "/techcampus.png",
     link: "/virtual-tour",
   },
 ]
@@ -195,11 +195,12 @@ export default function HomePage() {
             >
               <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 border border-white/30 hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/placeholder.svg?height=400&width=600&text=University+Campus"
+                  src="/hero-image.jpg"
                   alt="University Campus"
                   width={600}
                   height={400}
-                  className="rounded-xl shadow-lg"
+                  className="rounded-xl shadow-lg object-cover"
+                  priority
                 />
               </div>
             </div>
