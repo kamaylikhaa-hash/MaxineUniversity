@@ -102,27 +102,27 @@ const traditions = [
     name: "Maxine Day",
     description:
       "Annual celebration honoring our founder with campus-wide festivities, service projects, and the traditional lighting of the Maxine Torch.",
-    image: "/placeholder.svg?height=300&width=400&text=Maxine+Day",
+    image: "/maxineday.png",
     established: "1952",
   },
   {
     name: "Ring Ceremony",
     description:
       "Juniors receive their class rings in a formal ceremony, symbolizing their commitment to Maxine University values.",
-    image: "/placeholder.svg?height=300&width=400&text=Ring+Ceremony",
+    image: "/ringceremony.png",
     established: "1965",
   },
   {
     name: "Midnight Breakfast",
     description:
       "Faculty and staff serve breakfast to students during finals week, providing comfort and encouragement.",
-    image: "/placeholder.svg?height=300&width=400&text=Midnight+Breakfast",
+    image: "/midnightbf.png",
     established: "1978",
   },
   {
     name: "Senior Walk",
     description: "Graduating seniors walk through campus one final time, greeted by faculty, staff, and underclassmen.",
-    image: "/placeholder.svg?height=300&width=400&text=Senior+Walk",
+    image: "/walkday.png",
     established: "1985",
   },
 ]
