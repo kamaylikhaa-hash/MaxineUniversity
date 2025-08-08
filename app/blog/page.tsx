@@ -81,7 +81,7 @@ const blogPosts = [
     date: "March 3, 2024",
     readTime: "6 min read",
     category: "Alumni",
-    image: "/placeholder.svg?height=300&width=500&text=Space+Mission",
+    image: "/space.png",
   },
   {
     id: 7,
@@ -93,7 +93,7 @@ const blogPosts = [
     date: "March 1, 2024",
     readTime: "5 min read",
     category: "Student Life",
-    image: "/placeholder.svg?height=300&width=500&text=Wellness+Center",
+    image: "/center1.png",
   },
   {
     id: 8,
@@ -105,7 +105,7 @@ const blogPosts = [
     date: "February 28, 2024",
     readTime: "4 min read",
     category: "Faculty",
-    image: "/placeholder.svg?height=300&width=500&text=Faculty+Awards",
+    image: "/professor.png",
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ const blogPosts = [
     date: "February 25, 2024",
     readTime: "7 min read",
     category: "Technology",
-    image: "/placeholder.svg?height=300&width=500&text=AI+Learning",
+    image: "/lms.png",
   },
 ]
 
