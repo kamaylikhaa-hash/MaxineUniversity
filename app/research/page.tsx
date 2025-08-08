@@ -23,7 +23,7 @@ const featuredResearch = [
     funding: "₱8.5M",
     duration: "2022-2025",
     status: "Ongoing",
-    image: "/placeholder.svg?height=400&width=600&text=AI+Cardiovascular+Research",
+    image: "/projectresearch.png",
     abstract:
       "This groundbreaking research combines artificial intelligence with traditional cardiovascular medicine to develop more accurate diagnostic tools and personalized treatment protocols. Our team has successfully created an AI model that can predict cardiac events with 94% accuracy.",
     publications: 12,
@@ -38,7 +38,7 @@ const featuredResearch = [
     funding: "₱12.3M",
     duration: "2023-2026",
     status: "Ongoing",
-    image: "/placeholder.svg?height=400&width=600&text=Sustainable+Energy+Research",
+    image: "/sustainalibility.png",
     abstract:
       "Developing innovative renewable energy systems specifically designed for remote Filipino communities. Our research focuses on hybrid solar-wind systems with energy storage solutions that can operate effectively in tropical climates.",
     publications: 8,
@@ -53,7 +53,7 @@ const featuredResearch = [
     funding: "₱15.7M",
     duration: "2021-2024",
     status: "Final Phase",
-    image: "/placeholder.svg?height=400&width=600&text=Drug+Delivery+Research",
+    image: "/novel.png",
     abstract:
       "Revolutionary nanotechnology-based drug delivery systems that target cancer cells with unprecedented precision while minimizing side effects. Our research has shown 85% improvement in treatment efficacy compared to traditional methods.",
     publications: 18,
@@ -70,7 +70,7 @@ const researchCenters = [
     focus: "AI applications in healthcare, education, and business",
     projects: 15,
     funding: "₱18.5M",
-    image: "/placeholder.svg?height=300&width=400&text=AI+Research+Center",
+    image: "/center.png",
   },
   {
     name: "Sustainable Development Research Institute",
@@ -79,7 +79,7 @@ const researchCenters = [
     focus: "Environmental sustainability and renewable energy",
     projects: 12,
     funding: "₱22.1M",
-    image: "/placeholder.svg?height=300&width=400&text=Sustainability+Research",
+    image: "/sustainins.png",
   },
   {
     name: "Biomedical Innovation Laboratory",
@@ -88,7 +88,7 @@ const researchCenters = [
     focus: "Medical device development and clinical research",
     projects: 18,
     funding: "₱16.8M",
-    image: "/placeholder.svg?height=300&width=400&text=Biomedical+Lab",
+    image: "/bio.png",
   },
   {
     name: "Philippine Culture and Heritage Studies Center",
@@ -97,7 +97,7 @@ const researchCenters = [
     focus: "Cultural preservation and historical research",
     projects: 8,
     funding: "₱5.2M",
-    image: "/placeholder.svg?height=300&width=400&text=Culture+Research",
+    image: "/philins.png",
   },
 ]
 
