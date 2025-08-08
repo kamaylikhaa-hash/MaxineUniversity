@@ -133,7 +133,7 @@ const facilities = [
     type: "Library",
     description: "State-of-the-art research facility with over 500,000 volumes and 24/7 study spaces",
     features: ["24/7 Access", "Group Study Rooms", "Digital Archives", "Research Assistance"],
-    image: "/placeholder.svg?height=250&width=400&text=Library",
+    image: "/lib.png",
     icon: BookOpen,
   },
   {
@@ -141,7 +141,7 @@ const facilities = [
     type: "Fitness",
     description: "Complete fitness facility with modern equipment, courts, and wellness programs",
     features: ["Olympic Pool", "Rock Climbing Wall", "Basketball Courts", "Fitness Classes"],
-    image: "/placeholder.svg?height=250&width=400&text=Recreation+Center",
+    image: "/gym.png",
     icon: Dumbbell,
   },
   {
@@ -149,7 +149,7 @@ const facilities = [
     type: "Hospitality",
     description: "On-campus hotel providing accommodations for visitors and event hosting",
     features: ["150 Guest Rooms", "Conference Facilities", "Restaurant", "Event Planning"],
-    image: "/placeholder.svg?height=250&width=400&text=Hotel",
+    image: "/hotel.png",
     icon: Coffee,
   },
   {
@@ -157,7 +157,7 @@ const facilities = [
     type: "Technology",
     description: "Cutting-edge technology spaces for research, development, and learning",
     features: ["3D Printing", "VR/AR Labs", "Maker Spaces", "Computer Labs"],
-    image: "/placeholder.svg?height=250&width=400&text=Tech+Labs",
+    image: "/labs.png",
     icon: Users,
   },
 ]
