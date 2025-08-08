@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -51,11 +52,23 @@ export function Navigation() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="h-8 w-8 rounded-full bg-gradient-to-br from-maxine-cherry to-maxine-amaranth"></div>
-          <span className="text-xl font-bold bg-gradient-to-r from-maxine-amaranth to-maxine-cherry bg-clip-text text-transparent">
-            Maxine University
-          </span>
+        <Link href="/" className="flex items-center space-x-3 group">
+          <div className="relative h-12 w-12 overflow-hidden transition-transform duration-300 group-hover:scale-105">
+            <Image
+              src="/Ugh.png"
+              alt="Maxine University Logo"
+              width={48}
+              height={48}
+              className="object-contain"
+              priority
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-bold bg-gradient-to-r from-maxine-amaranth to-maxine-cherry bg-clip-text text-transparent transition-colors duration-300">
+              Maxine University
+            </span>
+            <span className="text-xs text-gray-600 font-medium">Excellence in Education</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -97,17 +110,20 @@ export function Navigation() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="hover:bg-maxine-lavender">Academics</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
-                  {academicDepartments.map((dept) => (
-                    <NavigationMenuLink key={dept.name} asChild>
-                      <Link
-                        href={dept.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-maxine-lavender hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <div className="text-sm font-medium leading-none">{dept.name}</div>
-                      </Link>
-                    </NavigationMenuLink>
-                  ))}
+                <div className="w-[600px] p-6 bg-white rounded-xl shadow-lg animate-in slide-in-from-top-5 duration-200">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {academicDepartments.map((dept) => (
+                      <NavigationMenuLink key={dept.name} asChild>
+                        <Link
+                          href={dept.href}
+                          className="block select-none rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth hover:shadow-md"
+                        >
+                          <div className="text-sm font-medium">{dept.name}</div>
+                          <p className="mt-1 text-xs text-gray-500">Explore our programs</p>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -115,17 +131,19 @@ export function Navigation() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="hover:bg-maxine-lavender">Campus Life</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-[400px] gap-3 p-4">
-                  {campusLifeLinks.map((link) => (
-                    <NavigationMenuLink key={link.name} asChild>
-                      <Link
-                        href={link.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-maxine-lavender hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <div className="text-sm font-medium leading-none">{link.name}</div>
-                      </Link>
-                    </NavigationMenuLink>
-                  ))}
+                <div className="w-[400px] p-6 bg-white rounded-xl shadow-lg animate-in slide-in-from-top-5 duration-200">
+                  <div className="grid gap-3">
+                    {campusLifeLinks.map((link) => (
+                      <NavigationMenuLink key={link.name} asChild>
+                        <Link
+                          href={link.href}
+                          className="block select-none rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth hover:shadow-md group"
+                        >
+                          <div className="text-sm font-medium group-hover:translate-x-1 transition-transform">{link.name}</div>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -133,17 +151,19 @@ export function Navigation() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="hover:bg-maxine-lavender">Discover</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid w-[400px] gap-3 p-4">
-                  {discoverLinks.map((link) => (
-                    <NavigationMenuLink key={link.name} asChild>
-                      <Link
-                        href={link.href}
-                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-maxine-lavender hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <div className="text-sm font-medium leading-none">{link.name}</div>
-                      </Link>
-                    </NavigationMenuLink>
-                  ))}
+                <div className="w-[400px] p-6 bg-white rounded-xl shadow-lg animate-in slide-in-from-top-5 duration-200">
+                  <div className="grid gap-3">
+                    {discoverLinks.map((link) => (
+                      <NavigationMenuLink key={link.name} asChild>
+                        <Link
+                          href={link.href}
+                          className="block select-none rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth hover:shadow-md group"
+                        >
+                          <div className="text-sm font-medium group-hover:translate-x-1 transition-transform">{link.name}</div>
+                        </Link>
+                      </NavigationMenuLink>
+                    ))}
+                  </div>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -198,39 +218,48 @@ export function Navigation() {
               <span className="sr-only">Toggle menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-            <nav className="flex flex-col space-y-4">
-              <Link
-                href="/"
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium hover:text-maxine-amaranth"
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium hover:text-maxine-amaranth"
-              >
-                About Maxine
-              </Link>
-              <Link
-                href="/admissions"
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium hover:text-maxine-amaranth"
-              >
-                Admissions
-              </Link>
+          <SheetContent side="right" className="w-[300px] sm:w-[400px] overflow-y-auto">
+            <div className="flex items-center space-x-3 mb-8">
+              <div className="relative h-10 w-10">
+                <Image
+                  src="/Ugh.png"
+                  alt="Maxine University Logo"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
+              </div>
+              <span className="text-lg font-bold text-maxine-amaranth">Maxine University</span>
+            </div>
+            <nav className="flex flex-col">
+              {/* Main Navigation Links */}
+              <div className="space-y-1 mb-6">
+                {[
+                  { href: "/", label: "Home" },
+                  { href: "/about", label: "About Maxine" },
+                  { href: "/admissions", label: "Admissions" },
+                ].map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 px-3 text-base font-medium rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
 
-              <div className="space-y-2">
-                <div className="text-lg font-medium">Academics</div>
-                <div className="ml-4 space-y-2">
+              {/* Academics Section */}
+              <div className="mb-6">
+                <div className="px-3 mb-2 text-sm font-semibold text-gray-500">ACADEMICS</div>
+                <div className="space-y-1">
                   {academicDepartments.map((dept) => (
                     <Link
                       key={dept.name}
                       href={dept.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-sm hover:text-maxine-amaranth"
+                      className="block py-2 px-3 text-sm rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
                     >
                       {dept.name}
                     </Link>
@@ -238,15 +267,16 @@ export function Navigation() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <div className="text-lg font-medium">Campus Life</div>
-                <div className="ml-4 space-y-2">
+              {/* Campus Life Section */}
+              <div className="mb-6">
+                <div className="px-3 mb-2 text-sm font-semibold text-gray-500">CAMPUS LIFE</div>
+                <div className="space-y-1">
                   {campusLifeLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-sm hover:text-maxine-amaranth"
+                      className="block py-2 px-3 text-sm rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
                     >
                       {link.name}
                     </Link>
@@ -254,15 +284,16 @@ export function Navigation() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <div className="text-lg font-medium">Discover</div>
-                <div className="ml-4 space-y-2">
+              {/* Discover Section */}
+              <div className="mb-6">
+                <div className="px-3 mb-2 text-sm font-semibold text-gray-500">DISCOVER</div>
+                <div className="space-y-1">
                   {discoverLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-sm hover:text-maxine-amaranth"
+                      className="block py-2 px-3 text-sm rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
                     >
                       {link.name}
                     </Link>
@@ -270,15 +301,16 @@ export function Navigation() {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <div className="text-lg font-medium">Student Hub</div>
-                <div className="ml-4 space-y-2">
+              {/* Student Hub Section */}
+              <div className="mb-6">
+                <div className="px-3 mb-2 text-sm font-semibold text-gray-500">STUDENT HUB</div>
+                <div className="space-y-1">
                   {studentHubLinks.map((link) => (
                     <Link
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="block text-sm hover:text-maxine-amaranth"
+                      className="block py-2 px-3 text-sm rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
                     >
                       {link.name}
                     </Link>
@@ -286,20 +318,23 @@ export function Navigation() {
                 </div>
               </div>
 
-              <Link
-                href="/careers"
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium hover:text-maxine-amaranth"
-              >
-                Careers
-              </Link>
-              <Link
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="text-lg font-medium hover:text-maxine-amaranth"
-              >
-                Contact Us
-              </Link>
+              {/* Additional Links */}
+              <div className="pt-6 mt-6 border-t border-gray-200">
+                <Link
+                  href="/careers"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 px-3 text-base font-medium rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
+                >
+                  Careers
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => setIsOpen(false)}
+                  className="block py-2 px-3 text-base font-medium rounded-lg transition-all duration-200 hover:bg-maxine-lavender hover:text-maxine-amaranth"
+                >
+                  Contact Us
+                </Link>
+              </div>
             </nav>
           </SheetContent>
         </Sheet>
